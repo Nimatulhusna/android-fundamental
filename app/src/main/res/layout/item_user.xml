@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="8dp"
+    android:background="@drawable/rv_border">
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:id="@+id/iv_item_avatar"
+        android:layout_width="99dp"
+        android:layout_height="99dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.006"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:siBorderColor="@color/colorA"
+        app:siBorderWidth="3dp"
+        tools:src="@color/colorA" />
+
+    <TextView
+        android:id="@+id/tv_item_name"
+        style="@style/TextViewChild"
+        android:layout_width="147dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/user"
+        android:textColor="#BFE1FB"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/iv_item_avatar"
+        app:layout_constraintTop_toTopOf="@id/iv_item_avatar" />
+
+    <ImageView
+        android:id="@+id/iv_item_username"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/tv_item_name"
+        android:layout_marginTop="44dp"
+        android:contentDescription="@string/imageview"
+        android:src="@drawable/ic_username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toEndOf="@id/iv_item_avatar"
+        app:layout_constraintTop_toTopOf="@id/iv_item_avatar" />
+
+    <TextView
+        android:id="@+id/tv_item_username"
+        style="@style/TextViewChild"
+        android:layout_width="198dp"
+        android:layout_height="21dp"
+        android:layout_below="@id/tv_item_name"
+        android:maxLines="1"
+        android:text="@string/username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintStart_toEndOf="@+id/iv_item_username"
+        app:layout_constraintTop_toTopOf="@id/iv_item_username" />
+
+    <ImageView
+        android:id="@+id/iv_item_company"
+        android:layout_width="24dp"
+        android:layout_height="23dp"
+        android:layout_below="@id/tv_item_username"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/ic_company"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toEndOf="@+id/iv_item_avatar"
+        app:layout_constraintTop_toTopOf="@+id/iv_item_avatar" />
+
+    <TextView
+        android:id="@+id/tv_item_company"
+        style="@style/TextViewChild"
+        android:layout_width="198dp"
+        android:layout_height="21dp"
+        android:layout_below="@id/tv_item_username"
+        android:maxLines="1"
+        android:text="@string/company"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintStart_toEndOf="@+id/iv_item_company"
+        app:layout_constraintTop_toTopOf="@id/iv_item_company" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
